@@ -1,0 +1,359 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+body {
+    font-family: "Sedan SC", serif;
+    background-color: #f5f5f5;
+}
+
+.left {
+    background-color: black;
+    height: 90vh;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 20px;
+    gap: 10px;
+    
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.profile img{
+    margin-top: 10%;
+    width: 50%;
+    border-radius: 50%;   
+}
+
+.profile p {
+    color: white;
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    padding-right: 20px;
+    margin-left: 30px;
+}
+
+.nav i{
+    color: white;
+}
+
+.nav:hover i {
+    color: gold;
+}
+.nav:hover a {
+    color: lightgrey;
+}
+
+.nav>a{
+    padding-left:10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 30px;
+
+}
+
+.right {
+    /* background-color: aqua; */
+    height: 90vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+header>h1 {
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+header>input {
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10%;
+    margin-top: 30px;
+    background-color: white;
+}
+
+header input:hover {
+    outline: none;
+    border: 2px solid green;
+}
+
+header input::placeholder {
+    color: grey;
+    font-size: smaller;
+}
+
+#board {
+    width: 85%;
+    border-radius: 25px;
+    background-color: white;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+#board img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2:hover {
+    text-decoration-color: goldenrod;
+    font-size: 32px;
+    transition: 1s;
+}
+
+.card-con {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-family: 'short baby',serif;
+}
+
+.card {
+    height: 100px;
+    width: 180px;
+    border-radius: 20px;
+}
+
+.card>i {
+    margin-left: 140px;
+    margin-top: 10px;
+}
+
+.cardHead {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.cardata {
+    margin-left: 10px;
+}
+
+.card:hover {
+    background: radial-gradient(
+        circle, rgba(238,174,202,1) 0%,
+        rgba(148, 187, 233, 1) 100%
+    );
+}
+
+.card1 {
+    background-color: lightblue;
+}
+
+.card2 {
+    background-color: lightyellow;
+}
+
+.card3 {
+    background-color: lightgreen;
+}
+
+.card4 {
+    background-color: lightblue;
+}
+
+#users {
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    border-radius: 30px;
+    background-color: white;
+}
+
+table th, table td {
+    padding: 15px 100px;
+    text-align: left;
+}
+table th {
+    background-color: #a39696;
+    font-weight: 700;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: antiquewhite;
+}
+
+table tbody tr:hover {
+    background-color: #cfc6c6;
+}
+
+#schedule{
+   background-color: white;
+   border-radius: 30px;
+   width: 90%;
+   height: 450px;
+   margin-top: 80px;
+   overflow-y: scroll;
+   max-height: 400px;
+   margin-left: 70px;
+}
+.schedule-head {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.schedule-head > h3 {
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.schedule-head p {
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.meets {
+    margin-top: 0;
+    margin-bottom: 1px;
+    margin-left: 10px;
+
+}
+
+.head {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.detail {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+}
+
+
+.schedule-details div:nth-child(odd) {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-left: 3px solid #9bdd7c;
+}
+
+.schedule-details div:nth-child(even) {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-left: 3px solid #867cdd;
+}
+
+.contact-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* margin:20px 20px 0px 20px; */
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+iframe {
+    border-radius: 30px;
+}
+
+.feedback-form {
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.feedback-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.feedback-form textarea{
+    resize: vertical;
+    height: 150px;
+}
+
+.feedback-form input[type="submit"]{
+    width: 100%;
+    padding:10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9bdd7c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+
+footer div {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: lightgrey;
+}
+
+footer a:first-child {
+    margin-left: 0;
+}
+
+footer a:last-child {
+    margin-right: 0;
+}
+
